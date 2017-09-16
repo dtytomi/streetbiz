@@ -14,6 +14,7 @@ import { EmailValidator } from '../../shared/validators/email.validator';
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
+
 @Component({
   selector: 'page-signup',
   templateUrl: 'signup.html'

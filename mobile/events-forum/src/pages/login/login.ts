@@ -53,8 +53,10 @@ export class LoginPage implements OnInit {
       });
 
       let user: UserCredentials = {
+
         email: signInForm.email,
         password: signInForm.password
+
       };
 
       loader.present();

@@ -39,6 +39,7 @@ import { APP_PROVIDERS } from '../providers/app.providers';
     ThreadsPage,
     ThreadComponent,
     UserAvatarComponent
+
   ],
   imports: [
     BrowserModule,

@@ -208,6 +208,7 @@ export class ThreadsPage implements OnInit {
   			self.loading = false;
   		});
   	} else {
+
   		self.favoriteThreadKeys.forEach(key => {
   			this.dataService.getThreadsRef().child(key).once('value')
   				.then(function (dataSnapshot) {

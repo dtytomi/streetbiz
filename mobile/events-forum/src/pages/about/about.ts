@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 
+
 /**
  * Generated class for the AboutPage page.
  *
@@ -21,6 +22,7 @@ export class AboutPage {
   	let browser = this.iab.create(url, '_blank', 'location=yes');
 
     browser.close();
+    
   }
 
 }

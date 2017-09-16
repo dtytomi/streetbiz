@@ -31,7 +31,7 @@ export class Eventsforum implements OnInit {
     public sqliteService: SqliteService,  public menu: MenuController,
     public events: Events, public modalCtrl: ModalController,
     public network: Network ) {
-    
+
     var self = this;
     this.rootPage = TabsPage;
 
@@ -43,7 +43,6 @@ export class Eventsforum implements OnInit {
         self.watchForConnection();
         self.watchForDisconnect();
         splashScreen.hide();
-
 
         console.log('in ready..');
         let array: string[] = platform.platforms();

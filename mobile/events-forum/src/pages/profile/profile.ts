@@ -6,6 +6,7 @@ import { IUser } from '../../shared/interfaces';
 import { AuthService } from '../../shared/services/auth.service';
 import { DataService } from '../../shared/services/data.service';
 
+
 /**
  * Generated class for the ProfilePage page.
  *
@@ -23,6 +24,7 @@ export class ProfilePage implements OnInit {
   userProfile = {};
   firebaseAccount: any = {};
   userStatistics: any = {};
+
 
   constructor(public navCtrl: NavController, 
     public loadingCtrl: LoadingController,
@@ -126,6 +128,7 @@ export class ProfilePage implements OnInit {
   			text: 'Camera',
   			icon: 'camera',
   			handler: () => {
+
   				self.openCamera(self.camera.PictureSourceType.CAMERA);
   			}
   		},
@@ -169,7 +172,6 @@ export class ProfilePage implements OnInit {
   				}
 
   				const byteArray = new Uint8Array(byteNumbers);
-
   				byteArrays.push(byteArray)
   			}
 

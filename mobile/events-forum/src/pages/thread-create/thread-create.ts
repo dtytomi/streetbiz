@@ -24,8 +24,8 @@ export class ThreadCreatePage implements OnInit {
   category: AbstractControl;
 
   constructor(private loadingCtrl: LoadingController,
-      private viewCtrl: ViewController, private fb: FormBuilder, private dataService: DataService,
-      private authService: AuthService) {
+    private viewCtrl: ViewController, private fb: FormBuilder, private dataService: DataService,
+    private authService: AuthService) {
   }
 
   ngOnInit() {

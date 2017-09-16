@@ -9,8 +9,10 @@ import { AuthService } from '../../shared/services/auth.service';
 
 
 @Component({
+
   templateUrl: 'tabs.html'
 })
+
 export class TabsPage implements OnInit {
   
   private threadsPage: any;
@@ -25,6 +27,7 @@ export class TabsPage implements OnInit {
     public events: Events) {
     // this tells the tabs component which Pages
     // should be each tab's root Page
+
       this.threadsPage = ThreadsPage;
       this.profilePage = ProfilePage;
       this.aboutPage = AboutPage

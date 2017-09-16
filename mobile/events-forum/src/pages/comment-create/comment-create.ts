@@ -6,6 +6,7 @@ import {AuthService} from '../../shared/services/auth.service';
 import {DataService} from '../../shared/services/data.service';
 import { IUser, IComment } from '../../shared/interfaces';
 
+
 /**
  * Generated class for the CommentCreatePage page.
  *
@@ -29,6 +30,7 @@ export class CommentCreatePage implements OnInit {
       public fb: FormBuilder, public dataService: DataService,
       public authService: AuthService, 
       public navParams: NavParams) {
+
   }
 
   ngOnInit() {
@@ -53,6 +55,7 @@ export class CommentCreatePage implements OnInit {
   	if (this.createCommentForm.valid) {
 
   		let loader = this.loadingCtrl.create({
+
   			content: 'Posting comment...',
   			dismissOnPageChange: true
   		});
@@ -65,8 +68,8 @@ export class CommentCreatePage implements OnInit {
 
   			let commentRef = self.dataService.getCommentsRef().push();
   			let commentKey: string = commentRef.key;
-  			let user: IUser = { uid: uid, username: username };
 
+  			let user: IUser = { uid: uid, username: username };
   			let newComment: IComment = {
   				key: commentKey,
   				text: commentForm.comment,
